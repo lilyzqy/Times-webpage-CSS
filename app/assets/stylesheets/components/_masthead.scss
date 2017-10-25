@@ -1,13 +1,14 @@
 .masthead {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	align-items: center;
 	border-bottom: 2px solid black;
 	position: relative;
 }
 
 .language-nav {
-	position: absolute;
+	position: static;
 	top: -15px;
 	left: calc(50% - (177.78px/2));
 	background: white;
@@ -25,8 +26,15 @@
 	color: $dark-gray;
 }
 
-.language-nav ul {
+.language-nav a:hover {
+	text-decoration: underline;
+}
+
+.language-nav ul,
+.masthead-links ul {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .logo {
@@ -36,6 +44,7 @@
 
 .masthead-links {
 	display: flex;
+	// justify-content: ;
 	font-family: $sans-serif;
 	font-size: 11px;
 	margin-top: 10px;
@@ -43,8 +52,15 @@
 }
 
 .masthead-links li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	margin-left: 10px;
 	border-right: 1px solid $light-gray;
+}
+
+.masthead-links li:last-of-type{
+	border-right:none;
 }
 
 .masthead-links button {
@@ -59,10 +75,16 @@
 	background-color: $lightest-gray;
 }
 
+
+.masthead-links a:hover {
+	color: $light-gray;
+}
+
 .masthead-links a,
-.masthead-links button, 
+.masthead-links button,
 .masthead-links time {
 	margin-right: 10px;
+	// border-style:outset;
 }
 
 .masthead-links i {
