@@ -11,27 +11,29 @@ margin: 5px;
   margin: 2px;
   // background-color: orange;
   width: 170px;
-  height: 20px
+  height: 20px;
 }
 
 .left-nav > ul > li {
   display: inline;
   box-sizing: border-box;
-  // margin: 5px;
+  font-family: $serif;
+  font-size: 14px;
 }
 
 .right-nav > ul > li {
   display: flex;
-  // margin: 5px;
+  font-family: $serif;
 }
 
 .right-nav > ul > li:last-of-type {
-
+  font-size: 15px;
 }
 
 .left-nav > ul > li:hover,
 .right-nav > ul > li:last-of-type:hover {
-
+  background-color: $light-gray;
+  border-radius: 4px;
 }
 
 .left-nav span {
@@ -44,22 +46,23 @@ margin: 5px;
 }
 
 .right-nav i {
-  background-color: $light-gray;
+  // background-color: $light-gray;
   padding: 3px;
   border-radius: 2px;
 }
 
 #search-modal-btn {
-  background-color: $light-gray;
+  // background-color: $light-gray;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 85px;
-  border-radius: 5px;
+  // border-radius: 5px;
 }
 
 #sections-sidebar-btn {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  width: 85px;
 }
