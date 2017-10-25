@@ -1,18 +1,28 @@
 .main-nav {
-
+display: flex;
+justify-content: space-between;
+margin: 5px;
 }
 
 .left-nav > ul,
 .right-nav > ul {
-
+  display: flex;
+  justify-content: space-between;
+  margin: 2px;
+  // background-color: orange;
+  width: 170px;
+  height: 20px
 }
 
 .left-nav > ul > li {
-
+  display: inline;
+  box-sizing: border-box;
+  // margin: 5px;
 }
 
 .right-nav > ul > li {
-
+  display: flex;
+  // margin: 5px;
 }
 
 .right-nav > ul > li:last-of-type {
@@ -28,7 +38,28 @@
 
 }
 
+.left-nav i {
+  display: inline;
+  margin: 10px;
+}
 
 .right-nav i {
+  background-color: $light-gray;
+  padding: 3px;
+  border-radius: 2px;
+}
 
+#search-modal-btn {
+  background-color: $light-gray;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 85px;
+  border-radius: 5px;
+}
+
+#sections-sidebar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
