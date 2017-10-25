@@ -1,0 +1,22 @@
+.section-nav {
+  display: block;
+  height: 100px;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+
+.section-nav ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-nav li:first-of-type:hover {
+  background-color: $light-gray;
+}
+
+.section-nav li:last-of-type:hover{
+  background-color: transparent;
+  text-decoration: underline;
+}
