@@ -55,6 +55,10 @@ hr {
 	margin-bottom: 1px;
 }
 
-a {
-	
+a:hover{
+	text-decoration: underline;
+}
+
+.hidden{
+	display: none;
 }
